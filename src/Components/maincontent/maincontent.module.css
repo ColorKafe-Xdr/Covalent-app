@@ -1,0 +1,123 @@
+.container {
+    margin: 30px 0 0 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container h2 {
+    margin: 0;
+}
+
+.container h3 {
+    quotes: a;
+}
+
+.subcontainer {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+.subcontainer div:hover {
+    cursor: pointer;
+}
+
+.subcontainer p {
+    margin-right: 5px;
+}
+
+.booklib {
+    margin: 100px 20px 0 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.libcontainer {
+    background-color: #1f2332;
+    width: 160px;
+    height: 240px;
+    transition: ease-in-out 0.25s;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 10px;
+    outline: 0px solid transparent;
+}
+
+.libcontainer:hover {
+    box-shadow: 0 0  50px -7px #607cd93b;
+    outline: 1px solid white;
+    cursor: alias;
+    text-decoration:dashed;
+}
+
+.libcontainer h3, .libcontainer p {
+    margin: 0;
+}
+
+.libcontainer .libsub {
+    width: inherit;
+}
+
+.thumbnail  {
+    margin: 0;
+    width: inherit;
+}
+
+.descr {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.descr p {
+    font-size: small;
+}
+
+.link {
+    display: flex;
+    align-items: center;
+    text-decoration: underline;
+    gap: 5px;
+    margin-bottom: 20px;
+}
+
+
+
+.searchbox {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    background-color: #161d2f;
+    border-radius: 15px;
+    padding-left: 6px;
+    width: 360px;
+    height: 30px;
+    outline: 2px solid #202b4a;
+    transition: ease-in-out 0.25s;
+
+}
+
+.searchbox:hover {
+    box-shadow: 0 0  50px -7px #607cd93b;
+    outline: 1px solid white;
+}
+.searchbox input {
+    border-radius: 0 15px 15px 0;
+    border: 0px transparent;
+    width: inherit;
+    height: 28px;
+    background-color: transparent;
+}
+
+.searchbox input:focus {
+    outline: 0px;
+}

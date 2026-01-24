@@ -1,0 +1,88 @@
+.maincontainer {
+    background:rgb(15, 19, 34);
+    width: 140px;
+    position: fixed;
+    height: 100vh;
+    text-align: center;
+    display: flex;
+    align-items: top;
+    justify-content: center;
+    font-size: 0.9rem;
+    left: 0px;
+    transition: 0.3s cubic-bezier(0, 0, 0.56, 1.15);
+    
+    
+}
+
+.maincontainer ul {
+    margin: 0;
+    padding: 0;
+   
+}
+
+.maincontainerDes {
+    background:rgb(15, 19, 34);
+    width: 140px;
+    position: fixed;
+    height: 100vh;
+    text-align: center;
+    display: flex;
+    align-items: top;
+    justify-content: center;
+    font-size: 0.9rem;
+    left: -140px;
+    transition: cubic-bezier(0.57, 0.15, 1, 1.01) 0.3s;
+    
+}
+
+.maincontainerDes ul{
+   opacity: 1;
+   margin: 0;
+   padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.navitems {
+list-style-type: none;
+
+}
+
+.sub {
+    background-color: transparent;
+    padding: 10px 35px;
+    border-radius: 10px;
+    margin: 10px 0;
+    border: 2px solid transparent;
+}
+
+.sub:hover {
+    cursor: pointer;
+    background-color: rgba(54, 87, 255, 0.071);
+    text-decoration: underline;
+}
+
+.sub:active {
+    border: 2px solid rgba(54, 101, 255, 0.156);
+}
+
+.image {
+    max-width: 32px;
+    max-height: auto;
+}
+
+nav {
+    margin-top: 32px;
+}
+
+.desativado {
+    filter: grayscale(100%) brightness(50%);
+}
+
+.desativado {
+    cursor: not-allowed;
+}
+

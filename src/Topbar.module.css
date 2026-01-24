@@ -1,0 +1,51 @@
+.container {
+   background-color: rgb(20, 26, 46);
+   
+   padding: 5px 10px;
+   display: flex;
+   justify-content: space-between;
+}
+
+.navbar {
+    height: 36px;
+    width: 36px ;
+    padding: 0;
+    border-radius: 100px;
+    border: 0;
+    background-color: rgba(255, 0, 0, 0);
+}
+
+.navbar:hover {
+    background: linear-gradient(36deg,rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.150) 100%);
+    cursor: pointer;
+}
+
+.lightdark {
+    height: 40px;
+    width: 40px ;
+    padding: 0;
+    border-radius: 100px;
+    border: 0;
+    background-color: rgba(255, 0, 0, 0);
+}
+
+.lightdark:hover {
+    background: linear-gradient(36deg,rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.150) 100%);
+    cursor: pointer;
+}
+
+.navbar:active {
+/*     background: linear-gradient(36deg,rgba(255, 255, 255, 0.101) 0%, rgba(255, 255, 255, 0.215) 100%); */
+    border: 2px solid rgba(255, 255, 255, 0.172);
+}
+
+.logo {
+    margin-left: 10px;
+}
+
+.subcontainer {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
