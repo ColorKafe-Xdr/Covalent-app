@@ -1,0 +1,30 @@
+
+{"object": {
+    "type": 3,
+    "contents": "pit",
+    "fontSize": 14,
+    "fontColor": "#E44234",
+    "fontFamily": 4,
+    "textAlign": 0,
+    "verticalAlign": 0,
+    "color": "transparent",
+    "backgroundColor": "transparent",
+    "opacity": 1,
+    "flags": [
+        "print"
+    ],
+    "rect": {
+        "origin": {
+            "x": 124.85414235705952,
+            "y": 120.18669778296383
+        },
+        "size": {
+            "width": 276.5460910151692,
+            "height": 154.02567094515751
+        }
+    },
+    "pageIndex": 0,
+    "id": "edcb441f-98f7-44b7-9d9e-d33d4cdee3ad",
+    "created": "2026-02-04T06:33:40.428Z",
+    "author": "Guest"
+}}

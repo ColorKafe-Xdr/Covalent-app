@@ -2,9 +2,13 @@ import style from "./maincontent.module.css"
 import { BiSearch } from "react-icons/bi";
 import Template from "../../assets/react.svg"
 import CHSAcover from '../../assets/CHSA-cover.png'
+import CNTcover from '../../assets/CNT-cover.png'
+import LNGcover from '../../assets/LNG-cover.png'
+import PREPcover from '../../assets/PREP-cover.png'
 import { BsBoxArrowUpRight } from "react-icons/bs";
 import { IconContext } from "react-icons";
 import { BiSolidHelpCircle } from "react-icons/bi";
+import { Link } from "react-router";
 
 
 
@@ -46,16 +50,33 @@ function BookCards(props) {
 
 export default function Library() {
     const Modulos = [
-        {thumbnail: CHSAcover, title: "CNT Vol 34", desc: "bom diaa tudo bem vom o senhor", materia: 'CNT'},
-        {thumbnail: CHSAcover, title: "CHSA Vol 24", desc: "bom dia", materia: 'CHSA'},
-        {thumbnail: CHSAcover, title: "MAT Vol 15", desc: "bom dia", materia: 'MAT'},
-        {thumbnail: CHSAcover, title: "LIN Vol 07", desc: "bom dia", materia: 'LIN'},
-        {thumbnail: CHSAcover, title: "LIN Vol 07", desc: "bom dia", materia: 'LINa'},
+        {thumbnail: CNTcover, title: "CNT Vol 25", desc: "bom diaa tudo bem vom o senhor", materia: 'CNT', query: 126},
+        {thumbnail: CNTcover, title: "CNT Vol 26", desc: "bom diaa tudo bem vom o senhor", materia: 'CNT', query: 127},
+        {thumbnail: CNTcover, title: "CNT Vol 27", desc: "bom diaa tudo bem vom o senhor", materia: 'CNT', query: 128},
+        {thumbnail: CNTcover, title: "CNT Vol 28", desc: "bom diaa tudo bem vom o senhor", materia: 'CNT', query: 129},
+        {thumbnail: CNTcover, title: "CNT Vol 29", desc: "bom diaa tudo bem vom o senhor", materia: 'CNT', query: 130},
+        {thumbnail: CNTcover, title: "CNT Vol 30", desc: "bom diaa tudo bem vom o senhor", materia: 'CNT', query: 131},
+        {thumbnail: CNTcover, title: "CNT Vol 31", desc: "bom diaa tudo bem vom o senhor", materia: 'CNT', query: 132},
+        {thumbnail: CNTcover, title: "CNT Vol 32", desc: "bom diaa tudo bem vom o senhor", materia: 'CNT', query: 133},
+        {thumbnail: CNTcover, title: "CNT Vol 33", desc: "bom diaa tudo bem vom o senhor", materia: 'CNT', query: 134},
+        {thumbnail: CNTcover, title: "CNT Vol 34", desc: "bom diaa tudo bem vom o senhor", materia: 'CNT', query: 135},
+        {thumbnail: CNTcover, title: "CNT Vol 35", desc: "bom diaa tudo bem vom o senhor", materia: 'CNT', query: 136},
+        {thumbnail: CNTcover, title: "CNT Vol 36", desc: "bom diaa tudo bem vom o senhor", materia: 'CNT', query: 137},
+        {thumbnail: PREPcover, title: "Prepara Bio. Vol 1", desc: "bom diaa tudo bem vom o senhor", materia: 'CNT', query: 175},
+        {thumbnail: PREPcover, title: "Prepara Bio. Vol 2", desc: "bom diaa tudo bem vom o senhor", materia: 'CNT', query: 180},
+        {thumbnail: PREPcover, title: "Prepara Fís. Vol 1", desc: "bom diaa tudo bem vom o senhor", materia: 'CNT', query: 177},
+        {thumbnail: PREPcover, title: "Prepara Fís. Vol 2", desc: "bom diaa tudo bem vom o senhor", materia: 'CNT', query: 178},
+        {thumbnail: PREPcover, title: "Prepara Quí. Vol 1", desc: "bom diaa tudo bem vom o senhor", materia: 'CNT', query: 176},
+        {thumbnail: PREPcover, title: "Prepara Quí. Vol 2", desc: "bom diaa tudo bem vom o senhor", materia: 'CNT', query: 179},
+        {thumbnail: CHSAcover, title: "CHSA Vol 34", desc: "bom dia", materia: 'CHSA', query: 34},
+        {thumbnail: CHSAcover, title: "MAT Vol 15", desc: "bom dia", materia: 'MAT', query: 315},
+        {thumbnail: LNGcover, title: "LIN Vol 07", desc: "bom dia", materia: 'LIN', query: 107},
+        {thumbnail: LNGcover, title: "LIN Vol 07", desc: "bom dia", materia: 'LINa', query: 107},
     ]
 /* console.log(Modulos[0].Descricao) */
 {/* <BookCards title={x.title} desc={x.desc} thumbnail={x.thumbnail} ></BookCards> */}
 
-let Livros = Modulos.map((x) => x = <BookCards title={x.title} desc={x.desc} thumbnail={x.thumbnail} materia={x.materia}></BookCards>)
+let Livros = Modulos.map((x) => x = <BookCards title={x.title} desc={x.desc} thumbnail={x.thumbnail} materia={x.materia} bookid={'/livro?id='+x.query}></BookCards>)
 console.log(Livros)
 
     return (

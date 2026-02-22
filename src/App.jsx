@@ -10,6 +10,12 @@ import Dark from "./assets/ModeSwitch-Dark.svg"
 import Light from "./assets/ModeSwitch-Light.svg"
 import Library from "./Components/maincontent/maincontent.jsx"
 
+
+
+
+
+
+
 function Navbutton(props) {
 
     return (
