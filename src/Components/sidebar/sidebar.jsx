@@ -7,7 +7,7 @@ import pontuelogo from '../../assets/pontue-logo.svg'
 function Sidebar(props) {
 
     const names = ['Estuda', 'Simulados', 'Pontue' ]
-    const links = [ 'https://estuda.com', 'https://simulados.estuda.com/interativo/usuarios', 'https://pontue.com.br']
+    const links = [ 'https://app.estuda.com/usuarios_turmas', 'https://simulados.estuda.com/interativo/usuarios', 'https://pontue.com.br']
     let w
 
     props.activedesactive ? w=style.maincontainer : w=style.maincontainerDes
@@ -17,7 +17,7 @@ return(
         <nav>   
             <ul>
                 <Navitems ImgSrc={ftdlogo} ItemName={names[1]} Href={links[1]}/>
-                <Navitems ImgSrc={estudalogo} ItemName={names[0]} Href={links[0]} desative={true}/>
+                <Navitems ImgSrc={estudalogo} ItemName={names[0]} Href={links[0]}/>
                 <Navitems ImgSrc={pontuelogo} ItemName={names[2]} Href={links[2]} desative={true}/>
             </ul>
         </nav>
