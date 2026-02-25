@@ -1214,6 +1214,12 @@
         },
                         {
             "path": "/MAT/100.pdf"
+        },
+                                {
+            "path": "/OTHERS/1.pdf"
+        },
+                                {
+            "path": "/OTHERS/2.pdf"
         }
     ]
 }
